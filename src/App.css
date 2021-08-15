@@ -1,38 +1,233 @@
-.App {
-  text-align: center;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar */
+#navbar {
+  border-radius: 0 0 100px 100px;
+  box-shadow: 0 8px 10px 0 rgba(239, 166, 73, 1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+/* Navbar */
+
+/* Main */
+#jumbotron {
+  padding: 6% 0 12% 0;
+  background-color: #08080d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#bg-row {
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#zero {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  filter: blur(3px);
+}
+
+#parent {
+  position: relative;
+  height: 60vh;
+  /* width: 90%; */
+}
+
+#profile {
+  position: absolute;
+  margin-top: -18vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#profile2 {
+  position: absolute;
+  margin-top: -18vh;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+#one {
+  width: 8rem;
+  position: absolute;
+  z-index: 3;
+  top: 250px;
+  left: 0;
+  filter: blur(10px);
+}
+
+#two {
+  width: 11rem;
+  position: absolute;
+  z-index: 2;
+  top: 170px;
+  left: 140px;
+}
+
+#three {
+  width: 5vh;
+  position: absolute;
+  z-index: 1;
+  top: 110px;
+  left: 59%;
+}
+
+.btn-black {
+  background-color: #efa649;
   color: white;
+  border-radius: 30px 40px 0 30px;
+  font-weight: bolder;
+  font-size: 13px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-black:hover {
+  background-color: white;
+  color: #efa649;
+  border-radius: 30px 30px 0 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-orange {
+  color: #fff;
+}
+
+.btn-orange:hover {
+  color: #efa649;
+}
+/* Main */
+
+/* About */
+#about {
+  font-family: 'Georama', sans-serif;
+  padding: 14vh 0 30vh 0;
+  letter-spacing: 1px;
+  background-color: #171717;
+}
+
+.layer {
+  transition: transform 0.2s;
+}
+
+.layer:hover {
+  transform: scale(1.2);
+}
+/* About */
+
+/* Project */
+.tabs {
+  margin-top: -15vh;
+}
+
+.text-project {
+  letter-spacing: 5 px;
+}
+
+.active {
+  background-color: #efa649;
+  width: 99%;
+}
+
+.right {
+  margin: -5rem 0 0 0;
+}
+
+.left {
+  margin-top: 2rem;
+}
+
+#text-orange {
+  color: #efa649;
+  text-decoration: none;
+}
+
+#text-orange:hover {
+  color: #fff;
+}
+
+.img-project {
+  filter: grayscale(100%);
+  transition: transform 0.2s;
+  border-radius: 7px;
+}
+
+.img-project:hover {
+  transform: scale(1.05);
+  filter: none;
+}
+/* Project */
+
+/* Skill */
+#skill {
+  background-color: #08080d;
+  padding: 8vh 0;
+}
+
+.img-project-skill {
+  filter: grayscale(80%);
+  transition: transform 0.2s;
+  border-radius: 40px;
+  width: 15vh;
+}
+
+.img-project-skill:hover {
+  transform: scale(1.05);
+  filter: none;
+}
+
+.but-link {
+  color: #fff;
+  border: 1px ridge #efa649;
+}
+
+.but-link:hover {
+  color: #fff;
+  filter: grayscale(50%);
+  border: 1px ridge #efa649;
+}
+
+.but-cv {
+  color: #fff;
+  background-color: #efa649;
+}
+
+.but-cv:hover {
+  filter: grayscale(50%);
+  color: #fff;
+}
+/* Skill */
+
+/* Footer */
+#footer {
+  padding: 5rem 0;
+  letter-spacing: 1px;
+  font-family: 'Georama 300', sans-serif;
+}
+
+.footer-bg {
+  background-image: url('./component/img/Untitled\ design\ \(1\).png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 150px 60%;
+}
+/* Footer */
+
+@media only screen and (max-width: 986px) {
+  .left {
+    margin-top: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .right {
+    margin: 0;
+  }
+  .img-project-skill {
+    filter: grayscale(80%);
+    transition: transform 0.2s;
+    border-radius: 40px;
+    width: 1000px;
   }
 }
